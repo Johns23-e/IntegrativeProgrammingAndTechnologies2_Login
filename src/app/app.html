@@ -1,12 +1,41 @@
-<h2>Login Page</h2>
+<div class="wrapper">
+  <div class="left-panel">
 
-<input type="text" placeholder="Username" [(ngModel)]="username">
-<br><br>
+    <img src="/css.jpg" class="side-image">
 
-<input type="password" placeholder="Password" [(ngModel)]="password">
-<br><br>
+    <div class="logo">CampusAssist</div>
 
-<button (click)="onLogin()">Click Me</button>
+    <h1>A complaint monitoring system</h1>
 
-<p *ngIf="message" class="success">{{ message }}</p>
-<p *ngIf="error" class="error">{{ error }}</p>
+    <p>
+      CampusAssist helps streamline, track, and resolve student concerns efficiently within EVSU.
+    </p>
+
+  </div>
+
+  <div class="right-panel">
+    <h2>Login</h2>
+
+    <input
+      type="text"
+      placeholder="Username"
+      [(ngModel)]="username"
+    />
+
+    <input
+      type="password"
+      placeholder="Password"
+      [(ngModel)]="password"
+    />
+
+    <div class="options">
+      <label><input type="checkbox" /> Remember me</label>
+      <a href="#">Forgot password?</a>
+    </div>
+
+    <button class="login-btn" (click)="onLogin()">Login</button>
+
+    <p class="success" *ngIf="message">{{ message }}</p>
+    <p class="error" *ngIf="error">{{ error }}</p>
+  </div>
+</div>

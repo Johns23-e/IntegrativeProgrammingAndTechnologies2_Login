@@ -26,7 +26,7 @@ export class App {
       this.password.trim() === this.correctPassword
     ) {
       this.error = '';
-      this.message = 'Hello, Abina, John Roque B. WELCOME TO IntegrativeProgrammingAndTechnologies 2. Have fun to learn!';
+      this.message = 'Welcome, Abina, John Roque B.!\nYou’re now logged in to Integrative Programming and Technologies 2.\nKeep learning, stay curious, and enjoy the journey!';
     } else {
       this.message = '';
       this.error = 'Invalid username or password. Please try again.';
